@@ -1,7 +1,3 @@
-//register service worker to PWA
-/*if('serviceWorker' in navigator){
-    navigator.serviceWorker.register("/service-worker.js");
-    
 
 //service worker installation
     
@@ -12,4 +8,4 @@
         console.log("Service worker activated");
     });
 
-*/
+    const cachedDirectories = ["/","index.js","index.html"]
