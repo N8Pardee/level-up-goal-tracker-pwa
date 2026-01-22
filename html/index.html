@@ -19,11 +19,27 @@
                         <label for="user-progress">Current Progress in most recent goal set:</label>
                         <progress id="user-progress" value= "100" max="1000"> 100 %          <!---use variable in value for level progress-----> </progress>
                     </p>
+
+                    <div>                                         
+                             <dialog id="goalText">
+                                   
+                                    <label for="newGoal">Enter new goal:</label>
+                                    <input type="text" id="newGoalText" name="goalTextInput" Placeholder="gain that xp bruh">
+                                    <br>
+                                    <label for="newGoal">Enter Priority level 1-3. 1 = High, 2 = Moderate, 3 = Low
+                                
+                                    </label>
+                                    <input type="number" id="newGoalPriority" name="priorityLevel" Placeholder="0">
+                                    <br>
+                                    <button class="goals" id="closePrompt" type="button">Close
+                                    </button>                                    
+                                </dialog>  
+
+                             <button onClick="goalText.showModal()" class="goals" id="openPrompt" type="button">Enter New Goal </button>            
+                        
+                    </div>
                     
-                    <p>
-                        <button class="goals" type="button">Enter New Goal </button>
-                        <!-------small window popup goes here for new goal-------->
-                    </p>
+                   
 
                     <p>
                         <a href="./goalPage.html">
